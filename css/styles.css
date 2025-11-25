@@ -1,0 +1,120 @@
+.logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    background: linear-gradient(white,purple);
+}
+.container{
+    /* background-color: red; */
+    border:2px solid black;
+    /* width: 900px; */
+    width:63%;
+    margin: auto;
+    height: 60vh;
+    /* overflow: auto; */
+    overflow-y:auto; /* contain floated children so background is visible */
+    margin-bottom: 12px;
+}
+.message{
+    background-color: pink;
+    width:200px;
+    margin:10px;
+    padding:6px;
+    border:2px solid black;
+    border-radius:4px;
+    cursor: pointer;
+   
+}
+.left{
+    float:left;
+    clear:both;
+}
+.right{
+    float:right;
+    clear:both;
+}
+#sub{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+    gap:5px;
+    /* background-color: red;; */
+}
+/* #sub{
+    width:75%;
+} */
+
+#mess-inp{
+    /* width: 800px; */
+    width:53%;
+    border:2px solid black;
+    border-radius: 6px;
+    height:25px;
+    padding:5px;
+    /* background-color: red; */
+    
+}
+.btn{
+    cursor:pointer;
+    border:2px solid black;
+    border-radius:4px;
+    color:black;
+    background-color: rgb(97, 194, 97);
+    padding:4px;
+    width:60px;
+    
+}
+.heading{
+    text-align:center;
+}
+
+@media (max-width: 450px) {
+    .container{
+        height: 40vh;
+    }
+    .message{
+        width:50px;
+    }
+    #mess-inp{
+        width: 60%;
+        height:17px;
+        padding:3px;
+    }
+   
+}
+.time{
+    font-size: 12px;
+    float:right;
+    margin-top:12px;
+    color:gray;
+
+}
+
+   .fade-out {
+    opacity: 0;
+    transition: opacity 0.7s ease; /* smooth fading */
+}
+.file{
+    width: 80px;
+    
+
+}
+.image{
+    width: 200px;
+    height: auto;
+}
+.pdf-file{
+    width: 100px;
+    height: auto;
+}
+#typing{
+    text-align: center;
+    font-style: italic;
+    color: green;
+    /* height: 20px; */
+}
