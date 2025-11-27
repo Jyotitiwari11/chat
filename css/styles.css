@@ -35,6 +35,7 @@ body{
     cursor:pointer;
     border-radius:8px;
     background-color: rgb(97, 194, 97);
+    font-weight: bold;
 
 }
 .message{
@@ -173,4 +174,12 @@ body{
     font-style: italic;
     color: green;
     /* height: 20px; */
+}
+.leave{
+    background-color: red;
+    font-weight: bold;
+}
+.leave:hover{
+    background-color: darkred;
+    transform: scale(1.05);
 }
