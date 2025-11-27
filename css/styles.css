@@ -178,6 +178,7 @@ body{
 .leave{
     background-color: red;
     font-weight: bold;
+    
 }
 .leave:hover{
     background-color: darkred;
