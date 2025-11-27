@@ -8,7 +8,7 @@ const messageInput = document.getElementById('mess-inp');
 const messageContainer = document.querySelector('.container');
 const file_inp=document.querySelector('.file');
 const join=document.querySelector('.join');
-
+const leave=document.querySelector('.leave');
 
  var audio =new Audio('ding.mp3');
  
@@ -139,6 +139,13 @@ join.addEventListener('click',(e)=>{
     //  emit is the function used to send an event with some data between the client and server used by both server and client.
     socket.emit('new-user-joined',name);
 
+})
+leave.addEventListener('click',(e)=>{
+    if (confirm("Are you sure you want to leave the chat?")) {
+        socket.emit('discon');
+        append(`You left the chat`,"right");
+        window.location.reload();
+    }
 })
 socket.on('user-joined',name=>{
     append(`${name} joined the chat`,'right');

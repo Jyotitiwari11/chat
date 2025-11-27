@@ -133,6 +133,11 @@ socket.on('type',data=>{
         delete users[socket.id];
         // will send event to client 
     });
+    //  socket.on('discon', message => {
+    //     socket.broadcast.emit('left-chat',  users[socket.id] );
+    //     // delete users[socket.id];
+    //     // will send event to client 
+    // });
  
   
 });
