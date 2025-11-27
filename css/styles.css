@@ -1,16 +1,24 @@
 .logo{
-    height: 150px;
-    display: block;
-    margin: auto;
+    height: 100px;
+    /* display: block;
+    margin: auto; */
 }
 body{
     width: 100vw;
     /* height: 100vh; */
     background: linear-gradient(white,purple);
+     font-family: "Poppins", sans-serif;
+    /* background: linear-gradient(180deg, #ffe3ed, #b03ab9); */
 }
 .container{
     /* background-color: red; */
     border:2px solid black;
+    background-image: url('/bg.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+
     /* width: 900px; */
     width:63%;
     margin: auto;
@@ -18,16 +26,26 @@ body{
     /* overflow: auto; */
     overflow-y:auto; /* contain floated children so background is visible */
     margin-bottom: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+.join{
+    padding:9px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    background-color: rgb(97, 194, 97);
+
 }
 .message{
-    background-color: pink;
+    background-color: beige;
     width:200px;
     margin:10px;
     padding:6px;
     border:2px solid black;
-    border-radius:4px;
+    border-radius:8px;
     cursor: pointer;
-   
+    
 }
 .left{
     float:left;
@@ -44,6 +62,14 @@ body{
     justify-content: center;
     gap:5px;
     /* background-color: red;; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    margin:15px;
+    /* flex-direction: column; */
 }
 /* #sub{
     width:75%;
@@ -62,12 +88,18 @@ body{
 .btn{
     cursor:pointer;
     border:2px solid black;
-    border-radius:4px;
+    border-radius:8px;
     color:black;
     background-color: rgb(97, 194, 97);
-    padding:4px;
+    padding:12px;
     width:60px;
+    border: none;
+    margin-left:6px;
     
+}
+.btn:hover{
+    background-color: rgb(72, 161, 72);
+    transform: scale(1.05);
 }
 .heading{
     text-align:center;
@@ -101,9 +133,33 @@ body{
 }
 .file{
     width: 80px;
+    display: none;
     
 
 }
+.lab{
+    border:2px solid black;
+    border-radius:4px;
+    color:black;
+    background-color: rgb(97, 194, 97);
+    padding:4px;
+    width:120px;
+    text-align: center;
+    cursor: pointer;
+    /*  */
+   
+    border: none;
+    border-radius: 8px;
+    /* color: white; */
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.lab:hover{
+    background-color: rgb(72, 161, 72);
+    transform: scale(1.05);
+}
+
 .image{
     width: 200px;
     height: auto;

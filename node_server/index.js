@@ -133,6 +133,6 @@ socket.on('type',data=>{
         delete users[socket.id];
         // will send event to client 
     });
-
+ 
   
 });

@@ -7,6 +7,7 @@ const form = document.getElementById('sub');
 const messageInput = document.getElementById('mess-inp');
 const messageContainer = document.querySelector('.container');
 const file_inp=document.querySelector('.file');
+const join=document.querySelector('.join');
 
 
  var audio =new Audio('ding.mp3');
@@ -133,9 +134,12 @@ messageInput.addEventListener('input',(e)=>{
     socket.emit('type');
 })
 
-const name = prompt("Enter your name to join");
-//  emit is the function used to send an event with some data between the client and server used by both server and client.
-socket.emit('new-user-joined',name);
+join.addEventListener('click',(e)=>{
+    const name = prompt("Enter your name to join");
+    //  emit is the function used to send an event with some data between the client and server used by both server and client.
+    socket.emit('new-user-joined',name);
+
+})
 socket.on('user-joined',name=>{
     append(`${name} joined the chat`,'right');
     

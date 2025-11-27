@@ -18,10 +18,15 @@
 </head>
 <body>
 
-    <nav> 
-        <img  class="logo"src="image.png" alt="">
-        <h1 class="heading">Welcome to iChat App</h1>
+    <nav class="nav"> 
+        <img  class="logo" src="logo2.jpg" alt="">
+        <div>
+            <button class="join btn">Join</button>
+            <button class="leave btn">Leave</button>
+
+        </div>
     </nav>
+    <h1 class="heading">Welcome to iChat App</h1>
 
     <p id="typing"></p>
     <div class="container">
@@ -38,7 +43,8 @@
     <div class="send">
         <form action="#" id="sub">
             <!-- <button id="emoji-btn"><i class="fa-solid fa-face-smile"></i></b> -->
-            <input type="file" class="file">
+            <input type="file"  class="file" id="file">
+            <label for="file" class="lab">Upload Image/pdf</label>
             <input type="text" name="message-inp" id="mess-inp" placeholder="type a message">
             <button type="submit" class="btn">Send</button>
            
